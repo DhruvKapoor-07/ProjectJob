@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <title>Login and Register</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    
+  }
+  .container12 {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  .butto12 {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+  }
+  
+  .butto12 {
+    background-color: #f05537;;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .butto12:hover {
+    background-color: #f05537;;
+  }
+  
+  #loginMessage,
+  #registerMessage {
+    margin-top: 10px;
+    color: red;
+  }
+  .hj{
+    display: flex;
+    justify-content: center;
+    color: #f05537;
+    font-weight: 700;
+    /* font-family: "Caveat", cursive; */
+    font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  }
+  .hg{
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    color: #f05537;
+    font-weight: 700;
+    font-size:30px;
+    font-family: "Caveat", cursive;
+    /* font-family: "Permanent Marker", cursive; */
+  font-weight: 400;
+  font-style: normal;
+  }
+  </style>
+</head>
+<body>
+  <h1 class="hj">Welcome TO JOB FIND PLATFORM</h1>
+  <h2 class="hg">Please enter your credentials</h2>
+  <div class="container12" id="container12">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Username" required>
+      <input type="password" id="loginPassword" placeholder="Password" required>
+      <button class="butto12" type="submit">Login</button>
+    </form>
+    <div id="loginMessage"></div>
+    <hr>
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="text" id="registerUsername" placeholder="Username" required>
+      <input type="password" id="registerPassword" placeholder="Password" required>
+      <button class="butto12" type="submit">Register</button>
+    </form>
+    <div id="registerMessage"></div>
+  </div>
+  
+</body>
+</html>
+<script >
+  var uname="";
+document.getElementById("loginForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var username = document.getElementById("loginUsername").value;
+    var password = document.getElementById("loginPassword").value;
+    var storedUsername = localStorage.getItem("username");
+    var storedPassword = localStorage.getItem("password");
+    uname=storedUsername;
+    if (username === storedUsername && password === storedPassword) {
+      
+      document.getElementById("loginMessage").style.color = "Green";
+      document.getElementById("loginMessage").innerHTML = "Login successful please wait!";
+     
+
+    // Store the username in session storage
+    sessionStorage.setItem('username', username);
+      // console.log(username);
+    //   document.getElementById("loginMessage").innerHTML = "Please wait";
+      setInterval(() => {
+        window.location.href = 'Project.html';
+      }, 2000);
+    } else {
+      document.getElementById("loginMessage").innerHTML = "Invalid username or password.";
+    }
+  });
+  
+  document.getElementById("registerForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    var username = document.getElementById("registerUsername").value;
+    var password = document.getElementById("registerPassword").value;
+    localStorage.setItem("username", username);
+    localStorage.setItem("password", password);
+    document.getElementById("registerMessage").innerHTML = "Registration successful!";
+  });
+  
+</script>
