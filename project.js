@@ -614,7 +614,7 @@ window.onload = function() {
     saveIcons.forEach(icon => {
         icon.addEventListener('click', toggleBookmark);
     });
-     function toggleBookmark12(event) {
+    function toggleBookmark12(event) {
         const saveIcon12 = event.target;
         // Toggle between regular and solid bookmark icons
         if (saveIcon12.classList.contains("fa-angle-down")) {
