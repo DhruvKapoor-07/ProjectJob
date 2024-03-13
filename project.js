@@ -614,11 +614,7 @@ window.onload = function() {
     saveIcons.forEach(icon => {
         icon.addEventListener('click', toggleBookmark);
     });
-};
-//ANGULAR
-window.onload = function() {
-    // Function to toggle the bookmark icon classes when clicked
-    function toggleBookmark(event) {
+     function toggleBookmark12(event) {
         const saveIcon12 = event.target;
         // Toggle between regular and solid bookmark icons
         if (saveIcon12.classList.contains("fa-angle-down")) {
@@ -631,11 +627,13 @@ window.onload = function() {
     }
 
     // Add click event listeners to each "Save" icon
-    const saveIcons = document.querySelectorAll('.fa-solid.fa-angle-down');
-    saveIcons.forEach(icon => {
-        icon.addEventListener('click', toggleBookmark);
+    const saveIcons12 = document.querySelectorAll('.fa-solid.fa-angle-down');
+    saveIcons12.forEach(icon => {
+        icon.addEventListener('click', toggleBookmark12);
     });
 };
+//ANGULAR
+
 
 $(document).ready(function(){
     // Function to sort job listings by number of days ago
