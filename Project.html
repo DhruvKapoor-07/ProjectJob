@@ -25,25 +25,29 @@
     <div class="mainContainer" id="mainContainer">
         <div class="container" id="container">
             <nav><img class="im" src="freshers.png" alt=""></nav>
-            <nav>Jobs</nav>
-            <nav id="scrollButton">Companies</nav>
-            <nav id="shareButton">Share</nav>
-            <nav onclick="saved()">Saved</nav>
+            <nav class="g">Jobs</nav>
+            <nav class="g" id="scrollButton">Companies</nav>
+            <nav class="g" id="shareButton">Share</nav>
+            <nav class="g" onclick="saved()">Saved</nav>
+            
         </div>
         <div class="search1" id="search1" style="margin-right: 12px;">
             <nav><input type="text" class="search" id="s" placeholder="   Search "></nav>
             <div ><span id="f1"><i id="f2" class="fa-solid fa-magnifying-glass"></i></span></div>
         </div>
+        <span class="bar"><i class="fa-solid fa-bars" onclick="burger()"></i></span>
         <div class="login">
-           <p id="login" style="color: rgb(186, 56, 9);font-size: 16px;margin-top: 4px;font-weight: 600;width: 180px;"><span id="greeting" style="font-size: 16px;"></span> <span style="color: #f05537;font-size: 18px;font-weight: 700;margin-top: 1.2px;" id="hello"></span><span>!</span></p>
+           <p id="login1" style="color: rgb(186, 56, 9);font-size: 16px;margin-top: 4px;font-weight: 600;width: 180px;"><span id="greeting1" style="font-size: 16px;"></span> <span style="color: #f05537;font-size: 18px;font-weight: 700;margin-top: 1.2px;" id="hello1"></span><span>!</span></p>
         </div>
-
+        
         <div id="employ" class="employ">
             <div class="line">
-                <p class="for" style="color:red;font-size: 14px;">Clear Saved<span class="logout"><i class="fa-solid fa-right-from-bracket" onclick=" return logout12()"><span class="logo" onclick=" return logout12()">Logout</span></i></span></p>
+                <p class="for" style="color:red;font-size: 14px;">Clear Saved <span class="logout"><i class="fa-solid fa-right-from-bracket" onclick=" return logout12()"><span class="logo" onclick=" return logout12()">Logout</span></i></span></p>
+                
             </div>
             <div style="margin-right: 80px;margin-top: 4px;"></i><i id="deleteButt" class="fa-solid fa-trash" style="cursor: pointer;"></i></div>
         </div>
+        
     </div>
     <div class="mainLeft" id="mainLeft">
         <div class="leftContainer">
@@ -72,7 +76,7 @@
                     <div style="font-size: 17px;">Department<span><i id="arrow" style="margin-left: 123px;"
                                onclick="return dept1()" class="fa-solid fa-angle-down"></i></span></div>
                     <div class="dept" id="dept1">
-                        <input class="input" type="checkbox" id="ProductionCheckbox"> Production, Manufacturin... <span>(7)</span><br>
+                        <input class="input" type="checkbox" id="ProductionCheckbox1"> Production, Manufacturin... <span>(7)</span><br>
                         <div><input class="input" type="checkbox"> Sales & Business Develop... <span>(5)</span></div>
                         <input class="input" type="checkbox" id="workModeCheckox"> Engineering - Soft... <span>(3)</span><br>
                         <input class="input" type="checkbox" id="workModeCheckox"> BFSI, Investments... <span>(2)</span><br>
@@ -115,7 +119,7 @@
                     <div class="education">
                         <div style="font-size: 17px;">Education<span><i id="arrow" style="margin-left: 123px;"
                                     class="fa-solid fa-angle-down" onclick="education()"></i></span></div>
-                        <div class="dept" id="education">
+                        <div class="dept" id="education1">
                             <input class="input" type="checkbox"> MS/M.sc(Science) <span>(2)</span><br>
                             <div><input class="input" type="checkbox"> Mtech<span>(1)</span></div>
                             <div><input class="input" type="checkbox"> Any Graduate<span>(20)</span></div>
@@ -127,7 +131,7 @@
                     <div class="posted">
                         <div style="font-size: 17px;">Posted by<span><i id="arrow" style="margin-left: 123px;"
                                     class="fa-solid fa-angle-down" onclick="posted()"></i></span></div>
-                        <div class="dept" id="posted">
+                        <div class="dept" id="posted1">
                             <input class="input" type="checkbox" id="companyCheckbox"> Company Jobs<span>(8)</span><br>
                             <div><input class="input" type="checkbox" id="consultantCheckbox"> Consultant Jobs<span>(3)</span></div>
 
@@ -150,7 +154,7 @@
                     <div class="Location">
                         <div style="font-size: 17px;">Location<span><i id="arrow" style="margin-left: 123px;"
                                     class="fa-solid fa-angle-down" onclick="locate()"></i></span></div>
-                        <div class="dept" id="locate">
+                        <div class="dept" id="locate1">
                             <input class="input" type="checkbox" id="chennaiCheckbox"> Chennai<span>(1)</span><br>
                             <div><input class="input" type="checkbox" id="puneCheckbox"> Pune<span>(3)</span></div>
                             <div><input class="input" type="checkbox" id="delhiCheckbox"> Delhi / NCR<span>(2)</span></div>
@@ -169,10 +173,11 @@
             </div>
         </div>
         <div class="mainMide">
+            
         <div class="mid" id="mid">
-            <p>
+            <p class="p1">
             <div class="dropdown"> <span style="color: #686b7d;">1 - 10 of 10</span> Jobs in India <span style="margin-left: 130px; color: #275DF5;">Send me jobs like these</span>
-                <span><button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
+                <span class="lop"><button class="btn dropdown-toggle" type="button" data-toggle="dropdown">
                     Sort by: 
                     <span class="sort-option">Relevance</span> <!--Intial value-->
                      <span class="caret"></span>
@@ -183,6 +188,140 @@
                 </ul>
             </span>
         </div></p>
+        
+        <div class="burger" id="burger">
+            <p id="login" style="color: rgb(186, 56, 9);font-size: 16px;margin-top: 4px;font-weight: 600;width: 180px;"><span id="greeting" style="font-size: 16px;"></span> <span style="color: #f05537;font-size: 18px;font-weight: 700;margin-top: 1.2px;" id="hello"></span><span>!</span></p>
+            <nav>Jobs</nav>
+            <nav id="scrollButton">Companies</nav>
+            <nav id="shareButton">Share</nav>
+            <nav onclick="saved()">Saved</nav>
+            <p class="for" style="color:red;font-size: 14px;">Clear Saved </p>
+            <span class="logout"><i class="fa-solid fa-right-from-bracket" onclick=" return logout12()"><span class="logo" onclick=" return logout12()">Logout</span></i></span>
+        </div>
+        <div class="filter" id="filterButton">All Filters</div>
+        <div class="filterPanel" id="filterPanel">
+            <div class="filter">All Filters</div>
+            <div class="horizontal"></div>
+            <div class="workMode" id="workMode">
+                <div style="font-size: 17px;">Work Mode <span><i id="arrow" style="margin-left: 110px;" onclick="return work()" class="fa-solid fa-angle-down"></i></span></div>
+                <div class="work" id="work1">
+                    <input class="input" type="checkbox" id="workModeCheckbox1"> Work from office (31)</li> <br>
+                    <input class="input" type="checkbox" id="HybridCheckbox1"> Hybrid (4)</li>
+                </div><br>
+                <div class="horizontal"></div><br>
+                <div class="experience">
+                    <div style="font-size: 17px;">Experience<span><i id="arrow" style="margin-left: 123px;"
+                               onclick="return exp()" class="fa-solid fa-angle-down"></i></span></div>
+                    <div class="exp" id="experienceRange">
+                        <div class="range"><input style="width: 200px;" type="range" id="experienceRangeInput" min="0" max="30" value="0" oninput="updateExperience()"></div>
+                        <div class="yrs2">0 Yrs <span class="yrs">30 Yrs</span></div>
+                        <div class="yrs2">
+                    <span id="ageDisplay">0</span> Yrs <span class="yrs">30 Yrs</span>
+        </div>
+                    </div>
+                </div><br>
+                <div class="horizontal"></div><br>
+                <div class="department">
+                    <div style="font-size: 17px;">Department<span><i id="arrow" style="margin-left: 123px;"
+                               onclick="return dept1()" class="fa-solid fa-angle-down"></i></span></div>
+                    <div class="dept" id="dept2">
+                        <input class="input" type="checkbox" id="ProductionCheckbox"> Production, Manufacturin... <span>(7)</span><br>
+                        <div><input class="input" type="checkbox"> Sales & Business Develop... <span>(5)</span></div>
+                        <input class="input" type="checkbox" id="workModeChekbox"> Engineering - Soft... <span>(3)</span><br>
+                        <input class="input" type="checkbox" id="workModeCheckbox"> BFSI, Investments... <span>(2)</span><br>
+                        <div style="margin-left: 20px;margin-top: 7px;color: #275DF5; font: 14px;">View more</div>
+                    </div><br>
+                    <div class="horizontal"></div><br>
+                    <div id = "salary" class="salary">
+                        <div style="font-size: 17px;">Salary<span><i id="arrow" style="margin-left: 123px;"
+                                    class="fa-solid fa-angle-down" onclick="return closeIt()"></i></span></div>
+                        <div id="dept23" class="dept">
+                            <input id="SalaryCheckbox6" class="input" type="checkbox"> 10-15 Lakhs <span>(34)</span><br>
+                            <div><input id="SalaryCheckbox7" class="input" type="checkbox"> 15-25 Lakhs<span>(51)</span></div>
+                            <input class="input" id="SalaryCheckbox8" type="checkbox"> 25-50 Lakhs<span>(82)</span><br>
+                            <input class="input" id="SalaryCheckbox9" type="checkbox"> 50-75 Lakhs <span>(51)</span><br>
+                            <div style="margin-left: 20px;margin-top: 7px;color: #275DF5; font: 14px;">View more</div>
+                        </div><br>
+                    </div>
+                    <div class="horizontal"></div><br>
+                    <div class="company" >
+                        <div style="font-size: 17px;">Company type<span><i id="arrow" style="margin-left: 123px;"
+                                    class="fa-solid fa-angle-down" onclick="company()"></i></span></div>
+                        <div class="dept" id="company2">
+                            <input class="input" type="checkbox"> Corporate <span>(5)</span><br>
+                            <div><input class="input" type="checkbox"> Indian MNC<span>(2)</span></div>
+                        </div><br>
+                    </div>
+                    <div class="horizontal"></div><br>
+                    <div class="role">
+                        <div style="font-size: 17px;">Role category<span><i id="arrow" style="margin-left: 123px;"
+                            class="fa-solid fa-angle-down" onclick="role12()"></i></span></div>
+                        <div class="dept" id="role13" >
+                            <input class="input" type="checkbox"> Telecom <span>(2)</span><br>
+                            <div><input class="input" type="checkbox"> Management<span>(2)</span></div>
+                            <div><input class="input" type="checkbox"> Operations, Mainte...<span>(2)</span></div>
+                            <div><input id="engnCheckbox1" class="input" type="checkbox" > Engineering<span>(3)</span></div>
+                            <div style="margin-left: 20px;margin-top: 7px;color: #275DF5; font: 14px;">View more</div>
+                        </div><br>
+                    </div>
+                    <div class="horizontal"></div><br>
+                    <div class="education">
+                        <div style="font-size: 17px;">Education<span><i id="arrow" style="margin-left: 123px;"
+                                    class="fa-solid fa-angle-down" onclick="education()"></i></span></div>
+                        <div class="dept" id="education2">
+                            <input class="input" type="checkbox"> MS/M.sc(Science) <span>(2)</span><br>
+                            <div><input class="input" type="checkbox"> Mtech<span>(1)</span></div>
+                            <div><input class="input" type="checkbox"> Any Graduate<span>(20)</span></div>
+                            <div><input class="input" type="checkbox" id="btechCheckbox1"> B.Tech/B.E<span>(1)</span></div>
+                            <div style="margin-left: 20px;margin-top: 7px;color: #275DF5; font: 14px;">View more</div>
+                        </div><br>
+                    </div>
+                    <div class="horizontal"></div><br>
+                    <div class="posted">
+                        <div style="font-size: 17px;">Posted by<span><i id="arrow" style="margin-left: 123px;"
+                                    class="fa-solid fa-angle-down" onclick="posted()"></i></span></div>
+                        <div class="dept" id="posted2">
+                            <input class="input" type="checkbox" id="companyCheckbox1"> Company Jobs<span>(8)</span><br>
+                            <div><input class="input" type="checkbox" id="consultantCheckbox1"> Consultant Jobs<span>(3)</span></div>
+
+                            <!-- <div style="margin-left: 20px;margin-top: 7px;color: #275DF5; font: 14px;">View more</div> -->
+                        </div><br>
+                    </div>
+                    <div class="horizontal"></div><br>
+                    <div class="Industry">
+                        <div style="font-size: 17px;">Industry<span><i id="arrow" style="margin-left: 123px;"
+                                    class="fa-solid fa-angle-down" onclick="industry()"></i></span></div>
+                        <div class="dept" id="industry1">
+                            <input class="input" type="checkbox"> Auto Components<span>(2)</span><br>
+                            <div><input class="input" type="checkbox"> Goverment / Publ<span>(2)</span></div>
+                            <div><input class="input" type="checkbox"> Chemicals<span>(1)</span></div>
+                            <div><input class="input" type="checkbox"> Electrical Equipment<span>(1)</span></div>
+                            <div style="margin-left: 20px;margin-top: 7px;color: #275DF5; font: 14px;">View more</div>
+                        </div><br>
+                    </div>
+                    <div class="horizontal"></div><br>
+                    <div class="Location">
+                        <div style="font-size: 17px;">Location<span><i id="arrow" style="margin-left: 123px;"
+                                    class="fa-solid fa-angle-down" onclick="locate()"></i></span></div>
+                        <div class="dept" id="locate2">
+                            <input class="input" type="checkbox" id="chennaiCheckbox1"> Chennai<span>(1)</span><br>
+                            <div><input class="input" type="checkbox" id="puneCheckbox1"> Pune<span>(3)</span></div>
+                            <div><input class="input" type="checkbox" id="delhiCheckbox1"> Delhi / NCR<span>(2)</span></div>
+                            <div><input class="input" type="checkbox" id="bangloreCheckbox1"> Banglore<span>(2)</span></div>
+                            <div style="margin-left: 20px;margin-top: 7px;color: #275DF5; font: 14px;">View more</div>
+                        </div><br>
+                        <div style="background-color: white; height: 250px;width: 240px;border-radius: 15px;">
+                            <div><img style="width: 150px;margin-left: 15px;" src="freshers.png" alt=""></div>
+                            <p class="para" >Increase your profile visibility up to 3 times among recruiters hiring for their jobs</p>
+                            <p style="margin-left: 15px;">Become visible to more recruiters with Resume Display Service.</p>
+                            <p style="font-weight: 500;color: #275DF5;margin-left: 15px;">Know More</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="job-listing" id="job-listing">
             <div class="square" id='square'>
                 <div class="head">Design Head</div>
@@ -360,6 +499,7 @@
     
 </div>
 <script>
+    
        const facebookBtn = document.querySelector(".facebook-btn");
         const twitterBtn = document.querySelector(".twitter-btn");
         const whatsappBtn = document.querySelector(".whatsapp-btn");
@@ -380,6 +520,7 @@
             
         }
         init();
+        
 </script>
 </body>
 </html>
