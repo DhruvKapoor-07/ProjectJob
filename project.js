@@ -634,7 +634,6 @@ window.onload = function() {
 };
 //ANGULAR
 
-
 $(document).ready(function(){
     // Function to sort job listings by number of days ago
     function sortByDaysAgo() {
@@ -707,3 +706,531 @@ document.getElementById("greeting").textContent = greeting;
 function logout12(){
     window.location.href = "index.html";
 }
+function burger(){
+    if (document.getElementById("burger").style.display=='flex') {
+        document.getElementById("burger").style.display='none';
+    }
+    else{
+        document.getElementById("burger").style.display='flex';
+    }
+}
+document.getElementById('filterButton').addEventListener('click', function() {
+    var filterPanel = document.getElementById('filterPanel');
+    if (filterPanel.style.left === '0px') {
+        // Hide the panel if it's already visible
+        filterPanel.style.left = '-300px';
+    } else {
+        // Show the panel by sliding it in from the left
+        filterPanel.style.left = '0px';
+    }
+});
+// Function to toggle visibility of elements
+function toggleVisibility(elementId) {
+    var element = document.getElementById(elementId);
+    if (element.classList.contains("hidden")) {
+        element.classList.remove("hidden");
+    } else {
+        element.classList.add("hidden");
+    }
+}
+
+// Function to handle filter toggle
+// Function to toggle work mode visibility
+function closeIt(){
+    if(document.getElementById("dept23").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("dept23").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("dept23").classList=="hidden"){
+        document.getElementById("dept23").classList="block";
+    }
+    // document.getElementById("dept").classList.toggle="";
+
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+function work(){
+    if(document.getElementById("work1").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("work1").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("work1").classList=="hidden"){
+        document.getElementById("work1").classList="block";
+    }
+    
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+function dept1(){
+    if(document.getElementById("dept2").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("dept2").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("dept2").classList=="hidden"){
+        document.getElementById("dept2").classList="block";
+    }
+    
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+function company(){
+    if(document.getElementById("company2").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("company2").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("company2").classList=="hidden"){
+        document.getElementById("company2").classList="block";
+    }
+    
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+function role12(){
+    if(document.getElementById("role13").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("role13").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("role13").classList=="hidden"){
+        document.getElementById("role13").classList="block";
+    }
+    
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+function locate(){
+    if(document.getElementById("locate2").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("locate2").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("locate2").classList=="hidden"){
+        document.getElementById("locate2").classList="block";
+    }
+    
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+function education(){
+    if(document.getElementById("education2").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("education2").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("education2").classList=="hidden"){
+        document.getElementById("education2").classList="block";
+    }
+    
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+function posted(){
+    if(document.getElementById("posted2").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("posted2").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("posted2").classList=="hidden"){
+        document.getElementById("posted2").classList="block";
+    }
+    
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+function jobs(){
+    if(document.getElementById("jobs1").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("jobs1").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("jobs1").classList=="hidden"){
+        document.getElementById("jobs1").classList="block";
+    }
+    
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+function industry(){
+    if(document.getElementById("industry1").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("industry1").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("industry1").classList=="hidden"){
+        document.getElementById("industry1").classList="block";
+    }
+    
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+function exp(){
+    if(document.getElementById("experienceRange").classList!="hidden"){
+        // document.getElementById("arrow").innerHTML.classList = <i class="fa-solid fa-angle-up"></i>;
+        document.getElementById("experienceRange").classList="hidden";
+
+    }
+    
+    // document.getElementById("dept").classList="hidden";
+    else if(document.getElementById("experienceRange").classList=="hidden"){
+        document.getElementById("experienceRange").classList="block";
+    }
+    
+    // document.getElementById("dept").toggleAttribute.style.display="block";
+}
+const workModeCheckbox1 = document.getElementById('workModeCheckbox1');
+    const HybridCheckbox1 = document.getElementById('HybridCheckbox1');
+    const SalaryCheckbox6 = document.getElementById('SalaryCheckbox6');
+    const SalaryCheckbox7 = document.getElementById('SalaryCheckbox7');
+    const SalaryCheckbox8= document.getElementById('SalaryCheckbox8');
+    const SalaryCheckbox9 = document.getElementById('SalaryCheckbox9');
+    const ProductionCheckbox1 = document.getElementById('ProductionCheckbox1');
+    const btechCheckbox1 = document.getElementById('btechCheckbox1');
+    const companyCheckbox1 = document.getElementById('companyCheckbox1');
+    const consultantCheckbox1 = document.getElementById('consultantCheckbox1');
+    const chennaiCheckbox1 = document.getElementById('chennaiCheckbox1');
+    const bangloreCheckbox1 = document.getElementById('bangloreCheckbox1');
+    const puneCheckbox1 = document.getElementById('puneCheckbox1');
+    const delhiCheckbox1 = document.getElementById('delhiCheckbox1');
+    const engnCheckbox1 = document.getElementById("engnCheckbox1");
+    // Add more checkbox references as needed
+    
+    // Get references to items to be filtered
+    const itemsToFilter1 = document.querySelectorAll('.square'); // Assuming you want to filter these elements
+
+    // Filter the items based on the checkbox states
+    workModeCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Microsoft')||item.textContent.includes('Deloitte')||item.textContent.includes('Design')||item.textContent.includes('Infosys')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }1
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    //for engineering checkbox
+    engnCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Deloitte')||item.textContent.includes('Microsoft')||item.textContent.includes('Infosys')||item.textContent.includes('Amazon')||item.textContent.includes("capg")) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    //for hybrid
+    HybridCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Technical Expert')||item.textContent.includes('Assistant')||item.textContent.includes('VICE')||item.textContent.includes('Plant')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    // for salary1
+    SalaryCheckbox6.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('10')||item.textContent.includes('11')||item.textContent.includes('12')||item.textContent.includes('13')||item.textContent.includes('14')||item.textContent.includes('15')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    //for salary2
+    SalaryCheckbox7.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('15')||item.textContent.includes('16')||item.textContent.includes('17')||item.textContent.includes('18')||item.textContent.includes('19')||item.textContent.includes('20')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    //for salary3
+    SalaryCheckbox8.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('25')||item.textContent.includes('26')||item.textContent.includes('27')||item.textContent.includes('28')||item.textContent.includes('29')||item.textContent.includes('30')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    //for salary4
+    SalaryCheckbox9.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('50')||item.textContent.includes('51')||item.textContent.includes('52')||item.textContent.includes('53')||item.textContent.includes('54')||item.textContent.includes('55')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    //production
+    ProductionCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Microsoft')||item.textContent.includes('Dredging')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    //btech jobs
+    btechCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Microsoft')||item.textContent.includes('Deloitte')||item.textContent.includes('Infosys')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    
+    //company checkbox
+    companyCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Microsoft')||item.textContent.includes('Infosys')||item.textContent.includes('Deloitte')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    //corporate
+    consultantCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Design')||item.textContent.includes('Technical')||item.textContent.includes('Plant')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    //checking of pune city companies
+    puneCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Pune')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    delhiCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Delhi')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    bangloreCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Banglore')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    chennaiCheckbox1.addEventListener('change', function() {
+        // Check if the checkbox is checked
+        if (this.checked) {
+            // Iterate through each item to filter
+            itemsToFilter1.forEach(item => {
+                // Example filtering based on the checkbox state
+                if (item.textContent.includes('Chennai')) {
+                    item.style.display = ''; // Show item
+                } else {
+                    item.style.display = 'none'; // Hide item
+                }
+            });
+        } else {
+            // If the checkbox is unchecked, show all items
+            itemsToFilter1.forEach(item => {
+                item.style.display = ''; // Show item
+            });
+        }
+    });
+    function getGreeting() {
+        var currentTime = new Date();
+        var currentHour = currentTime.getHours();
+    
+        var greeting;
+        if (currentHour < 12) {
+            greeting = "Good Morning";
+        } else if (currentHour < 17) {
+            greeting = "Good Afternoon";
+        } else {
+            greeting = "Good Evening";
+        }
+    
+        return greeting;
+    }
+    
+    var greeting = getGreeting();
+    document.getElementById("greeting1").textContent = greeting;
+    document.addEventListener('DOMContentLoaded', function() {
+        // Retrieve the username from session storage
+        var username = sessionStorage.getItem('username');
+        
+        // Display the username wherever needed in Project.html
+        document.getElementById("hello1").innerHTML = username;
+    });
