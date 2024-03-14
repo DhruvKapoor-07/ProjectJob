@@ -446,7 +446,7 @@ body {
 #lop{
     margin-left: 430px; margin-top: 13px;border-radius: 10px;
 }
-@media (max-width: 400px){
+@media (max-width: 450px){
     .footer{
         display: flex;
         flex-direction: column;
