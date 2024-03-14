@@ -36,7 +36,18 @@ body {
     font-family: 'Times New Roman', Times, serif;
 
 }
-
+.logo{
+    font-size: 10px;
+    margin-left: 8px;
+   
+}
+.line{
+    display: flex;
+}
+.logout{
+    color: black;
+    cursor: pointer;
+}
 .search {
     height: 33px;
     width: 200px;
