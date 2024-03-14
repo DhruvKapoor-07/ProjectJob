@@ -128,25 +128,36 @@
   }
 
   // Function to handle registration
-  function handleRegistration(event) {
+ function handleRegistration(event) {
     event.preventDefault();
     var username = document.getElementById("registerUsername").value;
     var password = document.getElementById("registerPassword").value;
     var users = JSON.parse(localStorage.getItem("users")) || [];
 
-    var userExists = users.some(function(user) {
-      return user.username === username;
-    });
+    // Regular expression to allow only letters and underscores in the username
+    var usernameRegex = /^[a-zA-Z_]+$/;
 
-    if (!userExists) {
-      users.push({ username: username, password: password });
-      localStorage.setItem("users", JSON.stringify(users));
-      document.getElementById("registerMessage").innerHTML = "Registration successful!";
+    // Check if the username contains only letters and underscores
+    if (usernameRegex.test(username)) {
+        var userExists = users.some(function(user) {
+            return user.username === username;
+        });
+
+        if (!userExists) {
+            users.push({ username: username, password: password });
+            localStorage.setItem("users", JSON.stringify(users));
+            document.getElementById("registerMessage").innerHTML = "Registration successful!";
+            document.getElementById("registerMessage").style.color = "green";
+            handleRegistration1(event);
+        } else {
+            document.getElementById("registerMessage").innerHTML = "Username already exists!";
+        }
     } else {
-      document.getElementById("registerMessage").innerHTML = "Username already exists!";
+        document.getElementById("registerMessage").innerHTML = "Invalid username! Use only letters and underscores.";
     }
-    handleRegistration1(event)
-  }
+    
+ } 
+  
   document.getElementById("loginForm").addEventListener("submit", handleLogin);
   document.getElementById("registerForm").addEventListener("submit", handleRegistration);
 
