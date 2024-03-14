@@ -704,3 +704,6 @@ function getGreeting() {
 
 var greeting = getGreeting();
 document.getElementById("greeting").textContent = greeting;
+function logout12(){
+    window.location.href = "index.html";
+}
