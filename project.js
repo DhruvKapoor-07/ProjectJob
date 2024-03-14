@@ -585,7 +585,17 @@ shareButton.addEventListener('click',function (){
     });
 });
 
-const deleteButto = document.getElementById("deleteButt");
+const deleteButto1 = document.getElementById("deleteButt");
+    deleteButto1.addEventListener("click", function() {
+        // Clear savedContent in session storage
+        for (let i = 1; i <= 10; i++) {
+            sessionStorage.removeItem(`savedDivContent${i}`);
+        }
+        // Clear content in List div
+        alert("Cleared");
+    });
+
+const deleteButto = document.getElementById("deleteButt1");
     deleteButto.addEventListener("click", function() {
         // Clear savedContent in session storage
         for (let i = 1; i <= 10; i++) {
